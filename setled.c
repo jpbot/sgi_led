@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <sysexits.h>
 
-void print_usage( void );
-
 int main(int argc, char * argv[]){
   //need to see two arguments (filename and value to set)
   if(argc == 2){
