@@ -16,8 +16,12 @@ install: install-setled install-ledset
 setled:
 	$(CC) $(CFLAGS) setled.c -o setled
 
-ledset:
+ledset: ledon ledoff
+
+ledon:
 	$(CC) $(CFLAGS) ledon.c -o ledon
+
+ledoff:
 	$(CC) $(CFLAGS) ledoff.c -o ledoff
 
 clean dist-clean:
